@@ -5,3 +5,7 @@ menu.addEventListener('click', function() {
     menu.classList.toggle('is-active')
     menuLinks.classList.toggle('active')
 })
+
+function GoToGameRandomizer() {
+    window.location.href = 'Games/Randomizer/index.html';
+}
