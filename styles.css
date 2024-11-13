@@ -373,3 +373,7 @@
     font-size: 0.8rem;
     color: #000000;
 }
+
+.DownloadGame {
+    position: relative;
+}

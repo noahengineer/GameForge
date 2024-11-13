@@ -7,5 +7,17 @@ menu.addEventListener('click', function() {
 })
 
 function GoToGameRandomizer() {
-    window.location.href = 'Games/Randomizer/index.html';
+    window.location.href = 'Games/WebGames/Randomizer/index.html';
 }
+function GoToCGJ() {
+    window.location.href = 'Games/WebGames/CrawferdGameJam2024/index.html';
+}
+
+function download(url) {
+    const a = document.createElement('a')
+    a.href = url
+    a.download = url.split('/').pop()
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+  }
