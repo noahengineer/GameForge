@@ -135,6 +135,7 @@
         width: 9rem;
         height: 3rem;
         margin-bottom: 10px;
+        cursor: pointer;
       }
     </style>
 
@@ -147,6 +148,7 @@
         // Function to download a file from a URL
         function downloadFileFromURL() {
             const url = "https://1drv.ms/u/s!AhSknOtzo4K85K9e6vKfOp4N1UapAQ?e=AJ48uP"; // Replace with your file URL
+            const filename = "Blind Boy and Shoter Girl"
             const a = document.createElement("a");
             a.href = url;
             a.download = filename;
@@ -154,7 +156,6 @@
             a.click();
             document.body.removeChild(a);
         }
-       
     </script>
   </body>
 </html>
