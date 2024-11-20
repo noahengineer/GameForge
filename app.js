@@ -12,6 +12,12 @@ function GoToGameRandomizer() {
 function GoToCGJ() {
     window.location.href = 'Games/WebGames/CrawferdGameJam2024/index.html';
 }
+function GoToBG() {
+    window.location.href = 'Games/WebGames/BallsGahel2.0/index.html';
+}
+function GoToGamePage() {
+    window.location.href = "games.html"
+}
 
 function download(url) {
     const a = document.createElement('a')
@@ -20,4 +26,18 @@ function download(url) {
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
-  }
+}
+
+let cardNumInput = 
+    document.querySelector('#cardNum')
+
+cardNumInput.addEventListener('keyup', () => {
+    let cNumber = cardNumInput.value
+    cNumber = cNumber.replace(/\s/g, "")
+
+    if (Number(cNumber)) {
+        cNumber = cNumber.match(/.{1,4}/g)
+        cNumber = cNumber.join(" ")
+        cardNumInput.value = cNumber
+    }
+})
