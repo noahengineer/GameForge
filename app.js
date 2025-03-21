@@ -15,6 +15,9 @@ function GoToCGJ() {
 function GoToBG() {
     window.location.href = 'Games/WebGames/BallsGahel2.0/index.html';
 }
+function GoToMT() {
+    window.location.href = 'Games/WebGames/MultiplayerTest/index.html';
+}
 function GoToGamePage() {
     window.location.href = "games.html"
 }
